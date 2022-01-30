@@ -10,7 +10,6 @@ import './AnimatedCheckmark.css'
 const MODES = {
   LOADING: 'loading',
   SUCCESS: 'success',
-  FAILURE: 'failure',
 }
 
 /*
