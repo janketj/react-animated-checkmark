@@ -15,9 +15,9 @@ describe('Component', () => {
     unmountComponentAtNode(node)
   })
 
-  it('displays a welcome message', () => {
+  it('check if AnimatedCheckmark renders without any extra props', () => {
     render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
+      expect(node.innerHTML).toContain('checkMarkContainer')
     })
   })
 })

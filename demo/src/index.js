@@ -1,13 +1,29 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 
-import Example from '../../src'
+import AnimatedCheckmark, { MODES } from '../../src'
 
 export default class Demo extends Component {
+  constructor() {
+    super()
+    this.state = {
+      mode: MODES.LOADING,
+    }
+  }
+
+  handleClick = () => {
+    if (this.state.mode === MODES.LOADING) {
+      this.setState({ mode: MODES.SUCCESS })
+    } else {
+      this.setState({ mode: MODES.LOADING })
+    }
+  }
+
   render() {
-    return <div>
+    const { mode } = this.state
+    return <div onClick={this.handleClick}>
       <h1>react-animated-checkmark Demo</h1>
-      <Example/>
+      <AnimatedCheckmark size={256} collapseFactor={0.8} mode={mode} />
     </div>
   }
 }

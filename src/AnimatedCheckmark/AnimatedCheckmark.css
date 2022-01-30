@@ -1,0 +1,49 @@
+.rotate {
+  transform: rotateZ(20deg);
+  transform-origin: center center;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: 0.2s;
+}
+
+.e1 {
+  animation-delay: 0.25s;
+}
+
+.e2 {
+  animation-delay: 0.5s;
+}
+
+.e3 {
+  animation-delay: 0.75s;
+}
+
+.e4 {
+  animation-delay: 1.0s;
+}
+
+.icon {
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
