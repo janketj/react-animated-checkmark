@@ -1,6 +1,6 @@
 {
   "name": "react-animated-checkmark",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Animated checkmark for React.js",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -33,10 +33,13 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "author": "",
+  "author": "Jannik Janket",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janketj/react-animated-checkmark.git"
+  },
   "keywords": [
     "react-component"
   ]
