@@ -4,7 +4,7 @@ import React, {
   useRef,
 } from 'react'
 
-import './AnimatedCheckmark.css'
+import '../styles/AnimatedCheckmark.css'
 
 // EXPORTED MODES READY TO USE
 const MODES = {

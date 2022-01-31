@@ -1,6 +1,6 @@
 {
   "name": "react-animated-checkmark",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Animated checkmark for React.js",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -11,10 +11,13 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "start": "npm-run-all -p watch-css start-js",
+    "start-js": "nwb serve-react-demo",
+    "build": "npm-run-all build-css build-js",
+    "build-css": "node-sass-chokidar src/styles/src -o src/styles",
+    "build-js": "nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
-    "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
@@ -24,6 +27,8 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.2",
     "nwb": "0.25.x",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
