@@ -24,7 +24,7 @@
 
 Make sure that your `React` version is > `16.8`!
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm-badge]: https://raster.shields.io/npm/v/react-animated-checkmark.png?style=flat-square
 [npm]: https://www.npmjs.org/package/react-animated-checkmark
 
 ## Basic Usage
